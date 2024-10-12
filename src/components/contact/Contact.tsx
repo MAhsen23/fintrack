@@ -70,7 +70,7 @@ export default function Contact() {
                                             initial={{ x: -20, opacity: 0 }}
                                             animate={{ x: 0, opacity: 1 }}
                                             transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
-                                            className="flex items-center space-x-4"
+                                            className="flex items-center overflow-hidden space-x-4"
                                         >
                                             <div className="bg-secondary/60 p-4 rounded-full text-muted-foreground text-sm">{item.icon}</div>
                                             <div>
@@ -138,14 +138,14 @@ export default function Contact() {
                     transition={{ duration: 0.5, delay: 1 }}
                     className="mt-24"
                 >
-                    <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+                    <h2 className="text-3xl font-bold mb-12">Frequently Asked Questions</h2> {/* Removed text-center */}
                     <Card className="w-full shadow-none bg-transparent max-w-3xl mx-auto">
                         <CardContent className="pt-6">
                             <Accordion type="single" collapsible className="w-full">
                                 {faqs.map((faq, index) => (
                                     <AccordionItem key={index} value={`item-${index}`}>
-                                        <AccordionTrigger>{faq.question}</AccordionTrigger>
-                                        <AccordionContent>{faq.answer}</AccordionContent>
+                                        <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger> {/* Added text-left */}
+                                        <AccordionContent className="text-left">{faq.answer}</AccordionContent> {/* Added text-left */}
                                     </AccordionItem>
                                 ))}
                             </Accordion>
