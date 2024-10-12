@@ -1,6 +1,5 @@
 "use client"
-import React, { useRef, useEffect, useState } from 'react'
-import { motion, useInView } from "framer-motion"
+import { motion } from "framer-motion"
 import { PhoneCall, Mail, MapPin, ArrowRight } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { FloatingLabelInput } from '../labelInput/LabelInput'
@@ -35,31 +34,6 @@ const faqs = [
         answer: "You can get a quote by contacting us through the form or by calling or email us directly."
     },
 ]
-
-const CounterAnimation = ({ end, duration }: { end: number; duration: number }) => {
-    const [count, setCount] = useState(0)
-    const nodeRef = useRef(null)
-    const inView = useInView(nodeRef, { once: true })
-
-    useEffect(() => {
-        if (inView) {
-            let start = 0
-            const increment = end / (duration / 16)
-            const timer = setInterval(() => {
-                start += increment
-                if (start > end) {
-                    setCount(end)
-                    clearInterval(timer)
-                } else {
-                    setCount(Math.floor(start))
-                }
-            }, 16)
-            return () => clearInterval(timer)
-        }
-    }, [end, duration, inView])
-
-    return <span ref={nodeRef}>{count}</span>
-}
 
 export default function Contact() {
     return (

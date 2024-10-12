@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { DollarSign, Briefcase, FileText, Calculator, PieChart, TrendingUp } from "lucide-react";
+import { DollarSign, Briefcase, FileText, Calculator, TrendingUp } from "lucide-react";
 
 const accountingServices = [
     {
