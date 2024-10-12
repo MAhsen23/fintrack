@@ -4,7 +4,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio"
 import Image from "next/image"
 
 const specializations = [
-    { title: "Bookkeeping", image: "/planning.jpg" },
+    { title: "Bookkeeping", image: "/Planning.jpg" },
     { title: "Financial Analysis", image: "/analysis.jpg" },
     { title: "Audit & Assurance", image: "/audit.jpg" },
     { title: "Business Consulting", image: "/consulting.jpg" },
