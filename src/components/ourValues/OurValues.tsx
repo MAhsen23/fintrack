@@ -57,7 +57,7 @@ export default function WhyChooseUs() {
                     {reasons.map((reason, index) => (
                         <Card key={index} className="bg-background/60 backdrop-blur-sm border-primary/10 hover:border-primary/30 transition-all duration-300">
                             <CardContent className="flex flex-col items-center text-center p-6">
-                                <div className="mb-4 p-3 bg-primary/10 rounded-full ring-2 ring-primary/20 ring-offset-2 ring-offset-background">
+                                <div className="mb-4 p-3 bg-[#457D58]/70 text-white rounded-full ring-2 ring-[#457D58]/40 ring-offset-2 ring-offset-background">
                                     {reason.icon}
                                 </div>
                                 <h3 className="font-semibold text-lg mb-2">{reason.title}</h3>

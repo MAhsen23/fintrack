@@ -1,21 +1,17 @@
 "use client"
-import React, { useRef, useEffect, useState } from 'react'
 import Image from 'next/image'
-import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import WhyChooseUs from '@/components/ourValues/OurValues'
 import CTA from '@/components/cta/CTA'
 import Header from '@/components/header/Header'
 import Footer from '@/components/footer/Footer'
 import { motion } from 'framer-motion'
-import { Facebook, Linkedin, Twitter } from 'lucide-react'
 
-const teamMembers = [
-    { name: "Ozair Mohtshim", role: "Founder & CEO", image: "" },
-    { name: "Muhammad Ahsen", role: "Full Stack Developer", image: "/ahsen.jpg" },
-    { name: "XYZ", role: "Chief Financial Officer", image: "" },
-]
+// const teamMembers = [
+//     { name: "Ozair Mohtshim", role: "Founder & CEO", image: "" },
+//     { name: "Muhammad Ahsen", role: "Full Stack Developer", image: "/ahsen.jpg" },
+//     { name: "XYZ", role: "Chief Financial Officer", image: "" },
+// ]
 export default function AboutPage() {
     return (
         <div className="flex min-h-screen flex-col">
