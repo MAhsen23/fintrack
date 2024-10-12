@@ -18,14 +18,6 @@ export default function Footer() {
                                 <span className="sr-only">Facebook</span>
                             </a>
                             <a href="#" className="transition-colors text-muted-foreground hover:text-primary duration-300">
-                                <Twitter className="w-5 h-5" />
-                                <span className="sr-only">Twitter</span>
-                            </a>
-                            <a href="#" className="transition-colors text-muted-foreground hover:text-primary duration-300">
-                                <Instagram className="w-5 h-5" />
-                                <span className="sr-only">Instagram</span>
-                            </a>
-                            <a href="#" className="transition-colors text-muted-foreground hover:text-primary duration-300">
                                 <Linkedin className="w-5 h-5" />
                                 <span className="sr-only">LinkedIn</span>
                             </a>

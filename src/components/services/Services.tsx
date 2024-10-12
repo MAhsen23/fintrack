@@ -57,7 +57,7 @@ const fadeInUp = {
 
 export default function AccountingServices() {
     return (
-        <section id="services" className="py-16">
+        <section id="services" className="pb-16">
             <div className="container mx-auto px-8">
                 <motion.div
                     initial="initial"

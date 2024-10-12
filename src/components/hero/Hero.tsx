@@ -37,7 +37,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="container mx-auto flex flex-col items-center lg:py-28 py-20 px-8 justify-center text-center"
+            className="container mx-auto flex flex-col items-center lg:py-28 py-16 px-8 justify-center text-center"
         >
             <motion.h1
                 initial={{ y: -20, opacity: 0 }}
@@ -77,7 +77,7 @@ export default function Hero() {
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 1 }}
-                className="mt-24 w-full"
+                className="mt-12 md:mt-20 w-full"
             >
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-border py-8">
                     {[

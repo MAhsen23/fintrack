@@ -138,14 +138,14 @@ export default function Contact() {
                     transition={{ duration: 0.5, delay: 1 }}
                     className="mt-24"
                 >
-                    <h2 className="text-3xl font-bold mb-12">Frequently Asked Questions</h2> {/* Removed text-center */}
+                    <h2 className="text-3xl font-bold mb-12 text-center">Frequently Asked Questions</h2>
                     <Card className="w-full shadow-none bg-transparent max-w-3xl mx-auto">
                         <CardContent className="pt-6">
                             <Accordion type="single" collapsible className="w-full">
                                 {faqs.map((faq, index) => (
                                     <AccordionItem key={index} value={`item-${index}`}>
-                                        <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger> {/* Added text-left */}
-                                        <AccordionContent className="text-left">{faq.answer}</AccordionContent> {/* Added text-left */}
+                                        <AccordionTrigger className="text-left outline-none">{faq.question}</AccordionTrigger>
+                                        <AccordionContent className="text-left">{faq.answer}</AccordionContent>
                                     </AccordionItem>
                                 ))}
                             </Accordion>

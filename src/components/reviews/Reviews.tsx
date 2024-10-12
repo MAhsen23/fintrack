@@ -58,7 +58,7 @@ const ReviewCard = ({ name, position, rating, review }: Review) => (
     <Card className="h-full shadow-none bg-background border-none">
         <CardContent className="p-6 flex flex-col h-full">
             <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full bg-secondary text-primary flex items-center justify-center text-xl font-semibold mr-4">
+                <div className="w-12 h-12 min-h-12 min-w-12 rounded-full bg-secondary text-primary flex items-center justify-center text-xl font-semibold mr-4">
                     {name.charAt(0)}
                 </div>
                 <div>
