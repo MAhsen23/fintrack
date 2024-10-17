@@ -96,7 +96,7 @@ export default function Header() {
             >
                 <div className="container mx-auto px-4 md:px-8 flex h-20 items-center justify-between">
                     <Link href="/" className="flex items-center space-x-2">
-                        <img src="/logo.png" alt="Fin Track Logo" className="h-20 w-20" />
+                        <img src="/logo.jpg" alt="Fin Track Logo" className="h-16 w-24" />
                         <p className="inline-block font-bold text-xl">FinTrack <span className="font-medium">Accounting</span></p>
                     </Link>
                     <nav className="hidden md:flex space-x-6">

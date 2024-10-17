@@ -13,11 +13,11 @@ export default function Footer() {
                             Providing trusted accounting and financial services to help your business thrive.
                         </p>
                         <div className="flex space-x-4">
-                            <a href="#" className="transition-colors text-muted-foreground hover:text-primary duration-300">
+                            <a href="https://www.facebook.com/profile.php?id=61566973631676" className="transition-colors text-muted-foreground hover:text-primary duration-300">
                                 <Facebook className="w-5 h-5" />
                                 <span className="sr-only">Facebook</span>
                             </a>
-                            <a href="#" className="transition-colors text-muted-foreground hover:text-primary duration-300">
+                            <a href="https://www.linkedin.com/company/fintrack-acounting/" className="transition-colors text-muted-foreground hover:text-primary duration-300">
                                 <Linkedin className="w-5 h-5" />
                                 <span className="sr-only">LinkedIn</span>
                             </a>
@@ -47,6 +47,7 @@ export default function Footer() {
                             <li>London, United Kingdom</li>
                             <li>+44 7867 621829</li>
                             <li>kaz.azhan@fintrackaccounting.com</li>
+                            <li>ozair@fintrackaccounting.com</li>
                         </ul>
                     </div>
                 </div>
