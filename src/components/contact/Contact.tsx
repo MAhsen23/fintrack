@@ -5,10 +5,11 @@ import { Button } from "@/components/ui/button"
 import { FloatingLabelInput } from '../labelInput/LabelInput'
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion"
 import { Card, CardContent } from "@/components/ui/card"
+import { useState } from "react"
 
 const contactInfo = [
     { icon: <PhoneCall className="h-4 w-4" />, title: 'Phone', lines: ['+44 7867 621829'] },
-    { icon: <Mail className="h-4 w-4" />, title: 'Email', lines: ['kaz.azhan@fintrackaccounting.com'] },
+    // { icon: <Mail className="h-4 w-4" />, title: 'Email', lines: ['kaz.azhan@fintrackaccounting.com'] },
     { icon: <Mail className="h-4 w-4" />, title: 'Email', lines: ['ozair@fintrackaccounting.com'] },
     { icon: <MapPin className="h-4 w-4" />, title: 'Address', lines: ['London, United Kingdom'] },
 ]
@@ -37,6 +38,17 @@ const faqs = [
 ]
 
 export default function Contact() {
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+        setName("")
+        setEmail("")
+        setMessage("")
+    }
+
     return (
         <motion.section
             id='contact'
@@ -108,24 +120,30 @@ export default function Contact() {
                         className="border p-8 rounded-xl shadow-none"
                     >
                         <h2 className="text-2xl font-semibold mb-6">Send Us a Message</h2>
-                        <form className="space-y-6">
+                        <form onSubmit={handleSubmit} className="space-y-6">
                             <FloatingLabelInput
                                 label="Name *"
                                 id="name"
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
                             />
                             <FloatingLabelInput
                                 label="Email *"
                                 id="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                             />
                             <FloatingLabelInput
                                 label="Message *"
                                 id="message"
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
                             />
                             <motion.div
-                                whileHover={{ scale: 1.05 }}
+                                // whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                <Button size="lg" className="w-full">
+                                <Button type="submit" size="lg" className="w-full">
                                     Send Message
                                     <ArrowRight className="ml-2 h-4 w-4" />
                                 </Button>

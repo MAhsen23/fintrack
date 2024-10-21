@@ -84,7 +84,7 @@ export default function Header() {
                     </div>
                     <div className="flex items-center space-x-2">
                         <Mail size={16} />
-                        <span>ozair@fintrackaccounting.com</span>
+                        <a href="mailto:ozair@fintrackaccounting.com" className="hover:underline">ozair@fintrackaccounting.com</a>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@ export default function Header() {
             >
                 <div className="container mx-auto px-4 md:px-8 flex h-20 items-center justify-between">
                     <Link href="/" className="flex items-center space-x-2">
-                        <img src="/logo.jpg" alt="Fin Track Logo" className="h-16 w-24" />
+                        <img src="/logo.png" alt="Fin Track Logo" className="h-12 w-24" />
                         <p className="inline-block font-bold text-xl">FinTrack <span className="font-medium">Accounting</span></p>
                     </Link>
                     <nav className="hidden md:flex space-x-6">
@@ -131,8 +131,8 @@ export default function Header() {
                         >
                             <div className="flex justify-between items-center h-20 px-4 mb-8">
                                 <Link href="/" className="flex items-center space-x-2">
-                                    <img src="/logo.jpg" alt="Fin Track Logo" className="h-8 w-8" />
-                                    <p className="inline-block font-bold text-xxl">FinTrack <span className="font-medium">Accounting</span></p>
+                                    <img src="/logo.png" alt="Fin Track Logo" className="h-6 w-12" />
+                                    <p className="inline-block font-bold text-xs">FinTrack <span className="font-medium">Accounting</span></p>
                                 </Link>
                                 <Button variant="ghost" size="icon" onClick={toggleMenu}>
                                     <X className="h-6 w-6" />
