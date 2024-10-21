@@ -131,7 +131,7 @@ export default function Header() {
                         >
                             <div className="flex justify-between items-center h-20 px-4 mb-8">
                                 <Link href="/" className="flex items-center space-x-2">
-                                    <img src="/logo.png" alt="Fin Track Logo" className="h-8 w-8" />
+                                    <img src="/logo.jpg" alt="Fin Track Logo" className="h-8 w-8" />
                                     <p className="inline-block font-bold text-xxl">FinTrack <span className="font-medium">Accounting</span></p>
                                 </Link>
                                 <Button variant="ghost" size="icon" onClick={toggleMenu}>
