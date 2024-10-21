@@ -84,10 +84,6 @@ export default function Header() {
                     </div>
                     <div className="flex items-center space-x-2">
                         <Mail size={16} />
-                        <span>kaz.azhan@fintrackaccounting.com</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                        <Mail size={16} />
                         <span>ozair@fintrackaccounting.com</span>
                     </div>
                 </div>

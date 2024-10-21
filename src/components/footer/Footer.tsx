@@ -1,5 +1,5 @@
 import React from 'react'
-import { Facebook, Linkedin } from 'lucide-react'
+import { Facebook, Linkedin, Mail } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Footer() {
@@ -20,6 +20,10 @@ export default function Footer() {
                             <a href="https://www.linkedin.com/company/fintrack-acounting/" className="transition-colors text-muted-foreground hover:text-primary duration-300">
                                 <Linkedin className="w-5 h-5" />
                                 <span className="sr-only">LinkedIn</span>
+                            </a>
+                            <a href="mailto:ozair@fintrackaccounting.com" className="transition-colors text-muted-foreground hover:text-primary duration-300">
+                                <Mail className="w-5 h-5" />
+                                <span className="sr-only">Email</span>
                             </a>
                         </div>
                     </div>
@@ -46,8 +50,8 @@ export default function Footer() {
                         <ul className="space-y-2 text-sm text-muted-foreground">
                             <li>London, United Kingdom</li>
                             <li>+44 7867 621829</li>
-                            <li>kaz.azhan@fintrackaccounting.com</li>
-                            <li>ozair@fintrackaccounting.com</li>
+                            <li><a href="mailto:kaz.azhan@fintrackaccounting.com" className="hover:text-primary transition-colors duration-300">kaz.azhan@fintrackaccounting.com</a></li>
+                            <li><a href="mailto:ozair@fintrackaccounting.com" className="hover:text-primary transition-colors duration-300">ozair@fintrackaccounting.com</a></li>
                         </ul>
                     </div>
                 </div>
