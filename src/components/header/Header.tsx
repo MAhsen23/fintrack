@@ -96,8 +96,8 @@ export default function Header() {
             >
                 <div className="container mx-auto px-4 md:px-8 flex h-20 items-center justify-between">
                     <Link href="/" className="flex items-center space-x-2">
-                        <img src="/logo.png" alt="Fin Track Logo" className="h-12 w-24" />
-                        <p className="inline-block font-bold text-xl">FinTrack <span className="font-medium">Accounting</span></p>
+                        <img src="/logo.png" alt="Fin Track Logo" className="h-8 w-16 md:h-12 md:w-24" />
+                        <p className="inline-block font-bold text-base md:text-lg lg:text-xl">FinTrack <span className="font-medium">Accounting</span></p>
                     </Link>
                     <nav className="hidden md:flex space-x-6">
                         <NavLinks activeSection={activeSection} scrollToSection={scrollToSection} />
@@ -132,7 +132,7 @@ export default function Header() {
                             <div className="flex justify-between items-center h-20 px-4 mb-8">
                                 <Link href="/" className="flex items-center space-x-2">
                                     <img src="/logo.png" alt="Fin Track Logo" className="h-6 w-12" />
-                                    <p className="inline-block font-bold text-xs">FinTrack <span className="font-medium">Accounting</span></p>
+                                    {/* <p className="inline-block font-bold text-sm">FinTrack <span className="font-medium">Accounting</span></p> */}
                                 </Link>
                                 <Button variant="ghost" size="icon" onClick={toggleMenu}>
                                     <X className="h-6 w-6" />
