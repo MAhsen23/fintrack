@@ -10,7 +10,8 @@ import { useState } from "react"
 const contactInfo = [
     { icon: <PhoneCall className="h-4 w-4" />, title: 'Phone', lines: ['+44 7867 621829'] },
     // { icon: <Mail className="h-4 w-4" />, title: 'Email', lines: ['kaz.azhan@fintrackaccounting.com'] },
-    { icon: <Mail className="h-4 w-4" />, title: 'Email', lines: ['ozair@fintrackaccounting.com'] },
+    { icon: <Mail className="h-4 w-4" />, title: 'Email', lines: ['info@fintrackaccounting.com'] },
+    { icon: <Mail className="h-4 w-4" />, title: 'Email', lines: ['marketing@fintrackaccounting.com'] },
     { icon: <MapPin className="h-4 w-4" />, title: 'Address', lines: ['London, United Kingdom'] },
 ]
 

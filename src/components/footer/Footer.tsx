@@ -21,7 +21,7 @@ export default function Footer() {
                                 <Linkedin className="w-5 h-5" />
                                 <span className="sr-only">LinkedIn</span>
                             </a>
-                            <a href="mailto:ozair@fintrackaccounting.com" className="transition-colors text-muted-foreground hover:text-primary duration-300">
+                            <a href="mailto:info@fintrackaccounting.com" className="transition-colors text-muted-foreground hover:text-primary duration-300">
                                 <Mail className="w-5 h-5" />
                                 <span className="sr-only">Email</span>
                             </a>
@@ -50,8 +50,8 @@ export default function Footer() {
                         <ul className="space-y-2 text-sm text-muted-foreground">
                             <li>London, United Kingdom</li>
                             <li>+44 7867 621829</li>
-                            <li><a href="mailto:kaz.azhan@fintrackaccounting.com" className="hover:text-primary transition-colors duration-300">kaz.azhan@fintrackaccounting.com</a></li>
-                            <li><a href="mailto:ozair@fintrackaccounting.com" className="hover:text-primary transition-colors duration-300">ozair@fintrackaccounting.com</a></li>
+                            <li><a href="mailto:info@fintrackaccounting.com" className="hover:text-primary transition-colors duration-300">info@fintrackaccounting.com</a></li>
+                            <li><a href="mailto:marketing@fintrackaccounting.com" className="hover:text-primary transition-colors duration-300">marketing@fintrackaccounting.com</a></li>
                         </ul>
                     </div>
                 </div>

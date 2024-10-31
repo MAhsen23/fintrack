@@ -84,7 +84,7 @@ export default function Header() {
                     </div>
                     <div className="flex items-center space-x-2">
                         <Mail size={16} />
-                        <a href="mailto:ozair@fintrackaccounting.com" className="hover:underline">ozair@fintrackaccounting.com</a>
+                        <a href="mailto:info@fintrackaccounting.com" className="hover:underline">info@fintrackaccounting.com</a>
                     </div>
                 </div>
             </div>
